@@ -1,0 +1,109 @@
+html, body {
+    /* border: 1px solid red; */
+    height: 100%;
+}
+.main {
+    /* border: 1px solid red; */
+    /* background: hotpink; */ 
+    height: 91%;
+    width: 100%;
+    display: table;
+}
+.wrapper {
+    text-align: center;
+    /* border: 1px solid red; */
+    background: grey;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;   
+}
+.col-sm-10{
+    border: 3px solid grey;
+    border-top: 3px solid darkgrey;
+    border-bottom: 3px solid darkgrey;
+}
+
+.left, .center, .right{
+    height: 700px;
+    /* border: 1px solid blue; */
+}
+.left{
+    background: darkgrey;
+}
+.center{
+    background: black;
+    border: 3px solid darkgrey;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
+}
+.trainDisplay{
+    position: absolute;
+    background: grey;
+    height: 75%;
+    width: 98%;
+    left: 1%;
+    top: 1%;
+    overflow-y: scroll;
+    
+}
+form{
+    position: absolute;
+    bottom: 8%;
+    width: 97%;
+} 
+.newTrainBtn{
+    position: absolute;
+    bottom: -46%;
+    right: 3%;
+    width: 94%;
+}
+.right{
+    background: darkgrey;
+}
+
+header, footer{
+    /* border: 1px solid black; */
+    /* position: fixed; */
+    background: tan;
+    width: 100%;
+    left: 0px;
+    height: 39px;
+}
+header{
+    top: 0px;
+
+}
+footer{
+    bottom: 0px;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+     /* LARGE */
+    .left, .right {
+        /* background: red; */
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* MEDIUM */
+    .left, .right {
+        /* background: yellow; */
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    /* SMALL */
+    .left, .right {
+        /* background: green; */
+    }
+}
+
+@media screen and (max-width: 575px) {
+    /* EXTRA SMALL */
+    .left, .right {
+      display: none;
+    }
+}
