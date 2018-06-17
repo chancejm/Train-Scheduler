@@ -2,17 +2,21 @@ html, body {
     /* border: 1px solid red; */
     height: 100%;
 }
+#away{
+    color: red;
+}
 .main {
     /* border: 1px solid red; */
-    /* background: hotpink; */ 
-    height: 91%;
+    /* background: hotpink;  */
+    height: 100%;
     width: 100%;
     display: table;
 }
 .wrapper {
     text-align: center;
     /* border: 1px solid red; */
-    background: grey;
+    background-image: url("../images/train.jpg");
+    background-size: 100% 100%;
     display: table-cell;
     height: 100%;
     vertical-align: middle;   
@@ -21,6 +25,9 @@ html, body {
     border: 3px solid grey;
     border-top: 3px solid darkgrey;
     border-bottom: 3px solid darkgrey;
+}
+.row{
+    /* border: 1px solid darkgrey; */
 }
 
 .left, .center, .right{
@@ -32,9 +39,9 @@ html, body {
 }
 .center{
     background: black;
-    border: 3px solid darkgrey;
-    border-top: 3px solid grey;
-    border-bottom: 3px solid grey;
+    border: 15px solid darkgrey;
+    border-top: 15px solid grey;
+    border-bottom: 15px solid grey;
 }
 .trainDisplay{
     position: absolute;
@@ -50,6 +57,7 @@ form{
     position: absolute;
     bottom: 8%;
     width: 97%;
+    border: none;
 } 
 .newTrainBtn{
     position: absolute;
@@ -64,7 +72,7 @@ form{
 header, footer{
     /* border: 1px solid black; */
     /* position: fixed; */
-    background: tan;
+    background: darkgrey;
     width: 100%;
     left: 0px;
     height: 39px;
